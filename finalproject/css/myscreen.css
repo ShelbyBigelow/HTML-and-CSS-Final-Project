@@ -1,0 +1,199 @@
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	font-family:"Courier New";
+	font-size:1.5em;
+	background:darkslategray;
+}
+body {
+    height: 100vh;
+  }
+nav {
+	width:100%;
+	height:auto;
+    background-color:#555;
+    text-align:left;
+    clear:both;
+    float:left;  
+    font-size: 13pt;
+}
+nav a {
+    text-decoration:none;
+}
+nav ul li {
+	list-style:none;
+	margin-left:-35px;
+	border-bottom:gray 2px solid;
+	border-left:gray 2px solid;
+	text-align:center;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:white;
+    color:black;
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:black;
+    color:white;
+}
+a:link{
+	color:dimgray;
+	text-decoration:underline;
+}
+a:visited{
+	color:black;
+	text-decoration:underline;
+}
+a:active{
+	color:gray;
+	text-decoration:none;
+}
+a:hover{
+	color:white;
+	background-color:darkslategray;
+	text-decoration:none;
+}
+header{
+	width:100%;
+	margin-top:0%;
+    background:none;
+	padding:10px;
+	box-shadow:3px 3px #555;
+	font-size:1.5em;
+    font-family: 'IM Fell DW Pica', sans-serif;
+}
+h1{
+	color:white;
+    text-shadow:none;
+    font-family: 'IM Fell DW Pica', sans-serif;
+    text-align:center;
+    font-size:4vmax;
+}
+h2{
+	color:white;
+    text-shadow:none;
+    font-family: "Courier New";
+    text-align:center;
+    font-size:2vmax;
+}
+h3{
+	color:darkslategray;
+    text-shadow:none;	
+    font-family: "Courier New";
+    text-align:center;
+    font-size:2vmax;
+}
+summary{
+	color:darkslategray;
+    text-shadow:none;	
+    font-family: "Courier New";
+    text-align:center;
+    font-size:4vmax;
+}
+
+section{
+	background:antiquewhite;
+}
+aside {
+    background:grey;
+    padding: 25px;
+    text-align: center;
+    box-shadow:none;
+}
+footer {
+    background: darkslategray;
+    color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    padding: 15px;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color:#115C62;
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #ffffff; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #F2E5D5; /* Add a hover color */
+}
+img{
+	box-shadow:none;
+    width: 100%;
+    height: auto;
+}
+
+.indent{
+	text-indent:40px;
+}
+.center{
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.pulse{
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse{
+    0% {color:#F2E5D5;text-shadow:1px 1px #F2E5D5;}
+    50% {color:#115C62;text-shadow:10px 10px 2px #115C62;}
+    100%{color:grey;text-shadow:1px 1px grey;}
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; 
+    float:left;   
+    padding:15px;   
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+}
+	
